@@ -204,8 +204,8 @@ model.add(kb.layers.MaxPooling2D((2, 2), padding = 'same'))
 
 model.add(kb.layers.Flatten()) # flattens into single array
 
-model.add(kb.layers.Dense(100, activation='relu')) #why 100
-model.add(kb.layers.Dense(1, activation='sigmoid'))  #fix this layer
+model.add(kb.layers.Dense(100, activation='relu'))
+model.add(kb.layers.Dense(1, activation='sigmoid'))  
 
 model.compile(loss='binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
 
